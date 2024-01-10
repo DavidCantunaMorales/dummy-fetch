@@ -1,0 +1,33 @@
+.dummy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas de igual ancho */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dummy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dummy li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.dummy img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dummy p {
+    text-align: center;
+    font-style: italic;
+}

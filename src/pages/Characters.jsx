@@ -1,3 +1,5 @@
+import './Characters.css'
+
 import { useEffect, useState } from "react";
 import { fetchCharacters } from "../api/fetchCharacters";
 
@@ -13,7 +15,7 @@ export const Characters = () => {
   }, []);
 
   return (
-    <div>
+    <div className="dummy">
       {characters ? (
         <ul>
           {characters.map((character) => (
