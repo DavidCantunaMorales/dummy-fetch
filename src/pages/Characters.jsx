@@ -15,18 +15,21 @@ export const Characters = () => {
   }, []);
 
   return (
-    <div className="dummy">
+    <div className="character-table">
       {characters ? (
-        <ul>
+        <div className="table-container">
           {characters.map((character) => (
-            <li key={character.id}>
-              <img src={character.image} alt="" height="200px" width="200px" />
-              <div>
-                {character.firstName} {character.age}{" "}
+            <div key={character.id} className="table-row">
+              <div className="table-cell">
+                <img src={character.image} alt="" className="character-image" />
               </div>
-            </li>
+              <div className="table-cell">
+                <div>{character.firstName}</div>
+                <div>{character.age}</div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
         <p>Loading characters</p>
       )}
